@@ -13,7 +13,6 @@ router.post("/refresh-token",refreshAccessToken);
 
 router.post("/logout",verifyToken,logoutUser);
 router.post("/change-password",verifyToken,changeCurrentPassword);
-
 router.get("/current-user",verifyToken,getCurrentUser);
 router.patch("/update-account",verifyToken,updateAccountDetails);
 
