@@ -5,7 +5,7 @@ import cookieParser from "cookie-parser";
 const app =express();
 
 app.use(cors({
-    origin : ["http://localhost:5173"],
+    origin : ["https://knit-finance-assignment.vercel.app"],
     methods:["GET","HEAD","PUT","PATCH","POST","DELETE"],
     credentials:true,
 }))
