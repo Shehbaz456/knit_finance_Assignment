@@ -5,6 +5,30 @@ It uses **Node.js, Express.js, and MongoDB** for backend, and includes structure
 
 ---
 
+## 🎯 Assignment Overview
+The goal of this assignment is to build a **scalable web application** with the following features:
+
+1. **Authentication & Authorization**
+   - Secure login and signup using JWT tokens.
+   - Middleware (`verifyToken`) to protect private routes.
+
+2. **Notes Management (CRUD)**
+   - Create a new note.
+   - Fetch all notes created by the logged-in user.
+   - Update an existing note (only by the owner).
+   - Delete a note (only by the owner).
+
+3. **Error Handling**
+   - Custom error responses using `ApiError` and `ApiResponse`.
+   - Handles unauthorized access with friendly messages (`Please sign up or login`).
+
+4. **Scalability & Clean Code**
+   - MVC structure: Controllers, Models, Routes, and Middlewares separated.
+   - Async handling with `asyncHandler`.
+   - RESTful API design principles followed.
+
+---
+
 ## 📌 Features
 - User Authentication (Register, Login, Logout)
 - JWT-based Protected Routes
@@ -268,6 +292,12 @@ All errors follow a consistent format:
 ### Auth Routes
 - `POST /api/v1/users/register` → Register a new user
 - `POST /api/v1/users/login` → Login user and get tokens
+- `POST /api/v1/users/refresh-token` → refresh token get new Access token
+- `POST /api/v1/users/logout` → logout user
+- `POST /api/v1/users/change-password` → change current password
+- `GET /api/v1/users/current-user` → get current user
+- `PATCH /api/v1/users/update-account` → update Account Details
+
 
 ### Notes Routes (Protected)
 - `POST /api/v1/notes/create` → Create a note
