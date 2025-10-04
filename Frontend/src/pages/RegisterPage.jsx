@@ -24,7 +24,7 @@ const RegisterPage = () => {
       const { confirmPassword, ...userData } = values;
       const result = await dispatch(registerUser(userData));
       if (result.type === 'auth/register/fulfilled') {
-        navigate('/dashboard');
+        navigate('/login');
       }
     },
   });
