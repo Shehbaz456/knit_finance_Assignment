@@ -23,11 +23,13 @@ The goal of this assignment is to build a **scalable web application** with the 
    - Handles unauthorized access with friendly messages (`Please sign up or login`).
 
 4. **Scalability & Clean Code**
-   - MVC structure: Controllers, Models, Routes, and Middlewares separated.
+   - MVC structure: Controllers, Models, Routes, and Middlewares are separated.
    - Async handling with `asyncHandler`.
    - RESTful API design principles followed.
 
 ---
+
+### Live Link: https://knit-finance-assignment.vercel.app
 
 ## 📌 Features
 - User Authentication (Register, Login, Logout)
